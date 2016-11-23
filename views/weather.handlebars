@@ -1,0 +1,128 @@
+<body class='purpleBack'>
+    {{#section 'leftMenu'}} 
+    {{> leftMenu}} 
+    {{/section}}
+
+    <div class='container-fluid marTop10 hidden' id='second'>
+        <div class='row row8'>
+            <div class='col-xs-4  text-center'>
+                <a id="simple-menu" class="menu-button hidden pull-left" href="#sidr"><img src='/images/menu.png'></a>
+            </div>
+            <div class='col-xs-4 text-center'>
+                <img class='img img-responsive' src='/images/umbrella.png' alt='umbrella' style='display:inline-block;'>
+            </div>
+            <div class='col-xs-4 text-center'>
+                <a id="bookmarkme"  href="#" rel="sidebar" title="bookmark this page">
+                <h6 class='pull-right newWhite' style=' display:inline-block'>add to favorites <i class="fa fa-heart-o" aria-hidden="true"></i> </h6>
+                </a>
+               
+            </div>
+        </div>
+        <div class='row row12'>
+
+        </div>
+        <div class='row row4'>
+            <div class='col-xs-12 text-center'>
+                <h4 id='today' style='magin-bottom:0px;'>TODAY</h4>
+            </div>
+        </div>
+        <div class='row row6'>
+            <div class='col-xs-12 '>
+                <h4 class='newWhite text-center' style='margin-top:0px;  margin-bottom:15px;'>{{cityName}}</h4>
+            </div>
+        </div>
+
+        <div class='row row6'>
+            <div class='col-xs-12 '>
+                <img class='center-block' style='width:120px' src='{{mainImage}}'>
+            </div>
+        </div>
+
+        <div class='clearfix'></div>
+
+        <div class='row'>
+            <div class='col-xs-12 '>
+                <h4 class='maxTemp text-center' style='margin-bottom:0px;'>{{todayMax}} &deg;C</h4>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-xs-12 '>
+                <h4 class='minTemp text-center' style='margin-top:7px;'>{{todayMin}} &deg;C</h4>
+            </div>
+        </div>
+        <div class='row row4'>
+
+        </div>
+
+
+        <div class='row row4 '>
+            <div class='col-xs-12 col-sm-3'></div>
+            <div class='col-xs-12 col-sm-6 '>
+                <div class='row'>
+                    <div class='col-xs-1'></div>
+                    <!--Days start -->
+                    {{#each fivedays}}
+                    <div class='col-xs-2'>
+                        <h5 class='newWhite text-center'>{{date}}</h5>
+                    </div>
+                    <!--Days end -->
+                    {{/each}}
+                    <div class='col-xs-1'></div>
+                </div>
+                <div class='row'>
+                    <div class='col-xs-1'></div>
+                    <!--Icons start -->
+                    {{#each fivedays}}
+                    <div class='col-xs-2 center-block'>
+                         <img class='img center-block' style='width:24px' src='{{iconUrl}}'>
+                    </div>
+                    <!--Icons end -->
+                    {{/each}}
+                    <div class='col-xs-1'></div>
+                </div>
+                <div class='clearfix'></div>
+                <div class='row' >
+                    <div class='col-xs-1'></div>
+                    <!--Icons start -->
+                    {{#each fivedays}}
+                    <div class='col-xs-2'>
+                         <h6 class='maxTemp text-center' style='margin-bottom:0px' >{{maxTemp}}&deg;C</h5>
+                    </div>
+                    <!--Icons end -->
+                    {{/each}}
+                    <div class='col-xs-1'></div>
+                </div> 
+                <div class='row' style='margin-top:0px !important;'>
+                    <div class='col-xs-1'></div>
+                    <!--Icons start -->
+                    {{#each fivedays}}
+                    <div class='col-xs-2'>
+                         <h6 class='minTemp text-center' style='margin-top:5px'>{{minTemp}}&deg;C</h5>
+                    </div>
+                    <!--Icons end -->
+                    {{/each}}
+                    <div class='col-xs-1'></div>
+                </div>                
+            </div>
+            <div class='col-xs-12 col-sm-3'></div>
+        </div>
+
+    </div>
+
+    
+    <div class='container' id='first'>
+        <div class='row loaderTop'>
+
+        </div>
+        <div class='row loaderMain'>
+            <div class='col-xs-12 center-block'>
+                <img class='center-block marTopBig' src='/images/umbrella2.png' alt='umbrella'>
+            </div>
+            <div class='col-xs-12'>
+                <h3 class='text-center'>umbrellapp</h3>
+            </div>
+        </div>
+    </div>
+
+
+</body>

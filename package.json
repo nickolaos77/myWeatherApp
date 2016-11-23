@@ -1,0 +1,17 @@
+{
+  "name": "holychallenge",
+  "version": "1.0.0",
+  "description": "This is the challenge I had to do for holy's selection process",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Nick Papasavvas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "request": "^2.79.0"
+  }
+}
