@@ -5,7 +5,7 @@ const express      = require('express'),
       request      = require('request'),
       urlstartW    = 'http://api.openweathermap.org/data/2.5/weather?',
       urlstartF    = 'http://api.openweathermap.org/data/2.5/forecast/daily?',
-      apiID        = process.env.OpenWeatherKey,
+      apiID        = 'e2b730cc523936d1dc01e11605302b22',
     //io           = require('socket.io')(http),
       PORT         = process.env.PORT || 3000;    
 

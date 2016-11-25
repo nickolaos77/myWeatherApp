@@ -63,6 +63,7 @@ app.set('view engine', 'handlebars')
 app.use(express.static(__dirname+ '/public'))
 
 app.get('/', function(req, res){
+    console.log(req.ip)
     res.render('home')
 })
 
