@@ -23,3 +23,6 @@ if (event.keyCode == 13) {
     document.getElementById("hit").click();
 }
 });  
+
+//Google autocomplete js https://ubilabs.github.io/geocomplete/
+$("#cityName").geocomplete();
