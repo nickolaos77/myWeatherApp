@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "ua-parser-js": "^0.7.12"
   }
 }

@@ -3,12 +3,13 @@ const express      = require('express'),
       app          = express(),
       http         = require('http').Server(app),
       request      = require('request'),
+      headparser   = require('./headparser.js'),
       urlstartW    = 'http://api.openweathermap.org/data/2.5/weather?',
       urlstartF    = 'http://api.openweathermap.org/data/2.5/forecast/daily?',
       apiID        = process.env.OpenWeatherKey,
     //io           = require('socket.io')(http),
-      PORT         = process.env.PORT || 3000;    
-console.log(apiID)
+      PORT         = process.env.PORT || 3000; 
+
 function getDay(unixtime){
     let date = new Date(unixtime*1000);
     return date.toString().split(' ')[0];
@@ -63,7 +64,7 @@ app.set('view engine', 'handlebars')
 app.use(express.static(__dirname+ '/public'))
 
 app.get('/', function(req, res){
-    console.log(req.ip)
+    headparser(req)
     res.render('home')
 })
 
