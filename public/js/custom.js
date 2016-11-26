@@ -16,7 +16,7 @@ $(document).ready(function () {
                 show()
             })
         }
-    }, 100000) 
+    }, 2000) 
 })
 $('#overlay, #close-menu-button').click(function () {
     $.sidr('close', 'sidr')
